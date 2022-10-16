@@ -43,6 +43,7 @@ class Product(models.Model):
         Category, related_name='products', on_delete=models.CASCADE)
     price = models.IntegerField()
     stock = models.IntegerField()
+    description = models.TextField()
     imageURL = models.URLField()
     status = models.BooleanField(default=True)
     date_created = models.DateField(auto_now_add=True)

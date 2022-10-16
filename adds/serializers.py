@@ -40,6 +40,7 @@ class ProductSerializer(serializers.ModelSerializer):
             'category',
             'price',
             'stock',
+            'description',
             'imageURL',
             'status',
             'date_created'
